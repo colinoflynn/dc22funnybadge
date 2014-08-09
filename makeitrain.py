@@ -18,7 +18,7 @@ totalsuck = ""
        
 for indx in range(0, len(transposeddata[0])):
     s = "              byte      %"
-    for bitnum in range(0, 8):
+    for bitnum in range(7, -1, -1):
         s += "%s"%transposeddata[bitnum][indx]
 
     s += ",  2"
